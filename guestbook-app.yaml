@@ -8,7 +8,9 @@ spec:
   source:
     repoURL: https://github.com/baizar/argocd-example-apps.git
     targetRevision: HEAD
-    path: guestbook
+    path: helm-guestbook
+    valuesFiles:
+      - values.yaml
   destination: 
     server: https://kubernetes.default.svc
     namespace: default
