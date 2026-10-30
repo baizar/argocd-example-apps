@@ -10,7 +10,7 @@ spec:
     targetRevision: HEAD
     path: helm-guestbook
     valuesFiles:
-      - values.yaml
+      - values-production.yaml
   destination: 
     server: https://kubernetes.default.svc
     namespace: default
